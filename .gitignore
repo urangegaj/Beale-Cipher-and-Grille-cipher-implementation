@@ -1,0 +1,44 @@
+# === Java build files ===
+*.class
+*.jar
+*.war
+*.ear
+
+# === Build directories ===
+bin/
+out/
+target/
+build/
+
+# === VS Code settings ===
+.vscode/
+
+# === OS-specific files ===
+.DS_Store
+Thumbs.db
+
+# === IDEs ===
+*.iml
+*.ipr
+*.iws
+.idea/
+.classpath
+.project
+.settings/
+
+# === Logs and temp files ===
+*.log
+*.tmp
+*.bak
+*.swp
+
+# === Example/test files ===
+frankenstein.txt
+
+# === Optional: ignore compiled test results or backups ===
+test-output/
+coverage/
+*.ser
+
+# === Ignore any compiled versions of source code ===
+**/*.class
