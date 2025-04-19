@@ -1,3 +1,4 @@
+package beale_cipher;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -45,8 +46,8 @@ public class BealeCipherEncryption {
         return sb.toString();
     }
 
-    public static void main(String[] args) throws IOException {
-        String ciphertext = encrypt("ATTACK AT DAWN", "frankenstein.txt");
-        System.out.println(ciphertext);
-    }
+    // public static void main(String[] args) throws IOException {
+    //     String ciphertext = encrypt("ATTACK AT DAWN", "frankenstein.txt");
+    //     System.out.println(ciphertext);
+    // }
 }
