@@ -33,7 +33,7 @@ Thumbs.db
 *.swp
 
 # === Example/test files ===
-frankenstein.txt
+# frankenstein.txt
 
 # === Optional: ignore compiled test results or backups ===
 test-output/
