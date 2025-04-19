@@ -1,7 +1,8 @@
+package grille_cipher;
 
 
 
-public  class grilleCipherDecryption{
+public  class GrilleCipherDecryption{
 
     public static String GrilleDecryption(String ciphertext, String key, int plaintextLength) {
         char[] keyArray = key.toCharArray();
@@ -18,9 +19,5 @@ public  class grilleCipherDecryption{
 
         return decodedplaintext.toString();
     }
-
-
-
-
 }
         
