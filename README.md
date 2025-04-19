@@ -18,6 +18,28 @@ Programi behet run permes Main.java, ku perdoruesit pastaj i kerkohet input, duk
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+Funksioni tek GrilleCipeherDecryption --- GrilleDecryption
+
+Eshte i tipit String, pra ne fund kthen plaintext ne forme String, si parametra merr ciphertext-in, key (ndryshe mask ose grille qe ne rastin tone jepet si string mirepo mund te implementohet me matrica dhe rrotullime te grille-it) dhe length te plaintext.
+Fillimisht funksioni krijon nje varg ku ruhen pozitat e key-it. Key qe pranohet si string do te ndryshoj formen ne varg per perdorim.
+Pastaj krijohet edhe nje varg per ciphertext-in ku perseri konvertojme stringun qe e marrim ne array per perdorim ne loop.
+Per shkak se na nevojitet te dekodojme shkronje per shkronje, perdorim StringBuilder per ta marrur tekstin e dekoduar.
+keyIndex perdoret per te ruajtur poziten mbrenda qelesit gjate iterimit neper ciphertext.
+Perdoret nje for loop per te iteruar per do element te ciphertext-it, me parakusht qe te mos tejkalohet gjatesia e ciphertekstit qe te mos kemi infinite loop, si dhe kusht qe teksti i dekotuar te mos tejkaloj gjatesin e plaintextit, qe te mos printohen edhe shkronjat shtese qe perdoren ne enkriptim.
+pastaj ne if statement merren vetem vlerat ku celesi ka "_" dhe ne ato pozita shtohen karakteret,kjo vazhdon ku qelesi rrotullohet neper renditje derisa te plotesohet teksti i dekoduar, rrotullimi sigurohet permes modulit me gjatesin e vete qelesit, qe e siguron qe qelesi te leviz 0->1->2->....-> keyarray.length-1 ->perserit 0->.....
+
+
 # Shembuj-te-rezultateve
 
 Merrni 2-3 shembull secili 
