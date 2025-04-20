@@ -98,3 +98,16 @@ Poashtu edhe plaintexti perpunohet, duke e konvertuar permbajten ne shkronja te 
 
 **Rezultati**
 Numrat per secilen shkronje lidhen me presje dhe formohet cipherTexti.
+
+### Procesi i Dekriptimit
+
+Metoda decrypt(String cipherText, String keyFile) kthen një cipherText të Beale në tekst të lexueshëm (plaintext) duke ndjekur hapat e mëposhtëm:
+
+**Leximi i keytext**
+File-i që përdoret si kyç (psh. "frankenstein.txt") lexohet dhe përpunohet njësoj si në enkriptim: teksti konvertohet në shkronja të mëdha dhe fjalët ndahen bazuar në hapësira, duke ruajtur pozitat e tyre
+
+**Dekodimi i numrave**
+CipherText-i ndahet në numra të ndarë me presje, ku secili numër përfaqëson një pozitë specifike në tekstin kyç. Për secilin numër, programi gjen fjalën përkatëse në atë pozitë dhe merr shkronjën e saj të parë. Këto shkronja bashkohen një nga një për të formuar plaintext-in. Nëse ndonjë numër është jashtë kufijve të listës së fjalëve, ai mund të anashkalohet ose të trajtohet si gabim, varësisht nga implementimi.
+
+**Rezultati**
+Si përfundim, kthehet një string me shkronjat e para të fjalëve të caktuara në pozitat e listuara, i cili përbën mesazhin origjinal.
