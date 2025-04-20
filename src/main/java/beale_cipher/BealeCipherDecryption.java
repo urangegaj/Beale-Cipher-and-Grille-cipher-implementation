@@ -11,7 +11,7 @@ public class BealeCipherDecryption {
         try {
             String keyText = Files.readString(Paths.get(keyFile), StandardCharsets.UTF_8);
 
-            // 🔧 Apply same cleaning as in encryption
+
             keyText = keyText.toUpperCase()
                     .replaceAll("[^A-Z\\s]", "")
                     .trim()
