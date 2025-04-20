@@ -24,7 +24,7 @@ Metoda `GrilleEncryption(String text, String mask)` kryen enkriptimin sipas kët
 
 **Verifikimi i të dhënave hyrëse:**
 
-Metoda `validateInputFormat(char[] maskArray, char[] textArray)` kryen verifikimin e formatit të të dhënave hyrëse duke u bazuar në kushtet e mëposhtme:
+Metoda `validateInputFormat(char[] maskArray, char[] textArray)` kryen verifikimin e formatit të të dhënave hyrëse dhe trajton gabimet duke u bazuar në kushtet e mëposhtme:
 
 - Maska duhet të përmbajë vetëm karakteret '\_' ose 'X'
 - Maska duhet të përmbajë të paktën një '\_' dhe një 'X'
@@ -53,39 +53,6 @@ Metoda `validateInputFormat(char[] maskArray, char[] textArray)` kryen verifikim
 
 Metoda `generateMask(int n)` krijon një maskë të rastësishme me n karaktere, e cila përmban si '\_' ashtu edhe 'X'.  
 Maska përmban gjithmonë të paktën një karakter të secilit lloj.
-
----
-
-**Përdorimi**
-
-### Enkriptimi
-
-```java
-String encryptedText = GrilleCipherEncryption.GrilleEncryption("plaintext", "X_X__XX_X_");
-```
-
-### Gjenerimi i Maskës
-
-```java
-String randomMask = GrilleCipherEncryption.generateMask(10);
-```
-
----
-
-**Trajtimi i Gabimeve**
-
-Metoda kthen mesazhe gabimi në rastet e mëposhtme:
-
-- Nëse maska përmban karaktere të pavlefshme (të ndryshme nga '\_' ose 'X')
-- Nëse maska përmban vetëm një lloj karakteri (të gjitha '\_' ose të gjitha 'X')
-- Nëse teksti hyrës është shumë i shkurtër (më pak se 2 shkronja pas përpunimit)
-
----
-
-**Varësitë funksionale**
-
-- Java Collections Framework
-- Klasa `Random` nga Java për të gjeneruar shkronja dhe maska të rastësishme
 
 ---
 
