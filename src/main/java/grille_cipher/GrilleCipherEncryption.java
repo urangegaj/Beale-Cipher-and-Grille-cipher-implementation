@@ -73,7 +73,7 @@ public class GrilleCipherEncryption {
         return result.toString();
     }
 
-    public static String generateMask() {
+    public static String generateMask(int n) {
         Random rand = new Random();
         StringBuilder mask;
 
@@ -81,7 +81,7 @@ public class GrilleCipherEncryption {
             mask = new StringBuilder();
             int countX = 0, countUnderscore = 0;
 
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < n; i++) {
                 if (rand.nextBoolean()) {
                     mask.append('X');
                     countX++;
@@ -91,7 +91,7 @@ public class GrilleCipherEncryption {
                 }
             }
 
-            if (countX > 0 && countUnderscore > 0) {
+            if (countX > 0 || countUnderscore > 0) {
                 break;
             }
         }

@@ -63,7 +63,9 @@ public class Main {
             String key = scanner.nextLine().trim();
     
             if (key.isEmpty()) {
-                key = GrilleCipherEncryption.generateMask();
+                System.out.print("Shtyp numrin per Mask Length: ");
+                int n = scanner.nextInt();
+                key = GrilleCipherEncryption.generateMask(n);
                 System.out.println("Key i gjeneruar: " + key);
             }
     
