@@ -47,7 +47,7 @@ public class BealeCipherEncryption {
     }
 
     // public static void main(String[] args) throws IOException {
-    //     String ciphertext = encrypt("ATTACK AT DAWN", "frankenstein.txt");
+    //     String ciphertext = encrypt("What can stop the determined heart and resolved will of man?", "frankenstein.txt");
     //     System.out.println(ciphertext);
     // }
 }
