@@ -86,6 +86,9 @@ public class GrilleCipherEncryption {
     }
 
     public static String generateMask(int n) {
+        if (n < 2) {
+            throw new IllegalArgumentException("Length duhet te jete se paku 2 qe te perfshije 'X' dhe '_'");
+        }
         Random rand = new Random();
         StringBuilder mask;
 
