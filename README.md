@@ -86,20 +86,6 @@ Metoda kthen mesazhe gabimi në rastet e mëposhtme:
 
 ---
 
-**Shembull**
-
-**Input:**
-```java
-GrilleEncryption("Pershendetje", "XX_____X_X");
-```
-
-**Output i mundshëm:**
-```
-QKPERSHTEJFGNDETJZE
-```
-(Ku 'P', 'E', 'R', 'S', 'H', 'E', 'N', 'D', 'E', 'T', 'J', 'E' vendosen në pozicionet '_' dhe shkronjat e tjera janë të rastësishme)
-
----
 
 **Varësitë funksionale**
 
@@ -131,4 +117,17 @@ fillimisht key dhe ciphertext konvertohen ne vargje karaktersh qe te perdoren ne
 
 # Shembuj-te-rezultateve
 
-Merrni 2-3 shembull secili 
+**Shembull**
+
+**Input:**
+```java
+GrilleEncryption("Pershendetje", "XX_____X_X");
+```
+
+**Output i mundshëm:**
+```
+QKPERSHTEJFGNDETJZE
+```
+(Ku 'P', 'E', 'R', 'S', 'H', 'E', 'N', 'D', 'E', 'T', 'J', 'E' vendosen në pozicionet '_' dhe shkronjat e tjera janë të rastësishme)
+
+---

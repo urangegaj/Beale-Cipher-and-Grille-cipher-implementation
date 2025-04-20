@@ -27,6 +27,7 @@ public class Main {
             File file = new File(filename);
         if (!file.exists()) {
         System.out.println("Fajlli nuk u gjet: " + filename);
+        scanner.close();
         return;
         }
             System.out.print("Plaintext: ");
