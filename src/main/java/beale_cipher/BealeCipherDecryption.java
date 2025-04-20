@@ -1,3 +1,4 @@
+package beale_cipher;
 import java.util.ArrayList;
 import java.util.List;
 
