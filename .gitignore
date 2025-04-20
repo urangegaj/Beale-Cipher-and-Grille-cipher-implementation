@@ -6,9 +6,9 @@
 
 # === Build directories ===
 bin/
-out/
 target/
 build/
+out/
 
 # === VS Code settings ===
 .vscode/
