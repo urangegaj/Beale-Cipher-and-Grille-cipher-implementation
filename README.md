@@ -29,6 +29,9 @@ Metoda `GrilleEncryption(String text, String mask)` kryen enkriptimin sipas kët
 
 **Verifikimi i të dhënave hyrëse:**
 
+Metoda `validateInputFormat(char[] maskArray, char[] textArray)` kryen verifikimin e formatit të të dhënave hyrëse duke u bazuar në kushtet e mëposhtme:
+
+
 - Maska duhet të përmbajë vetëm karakteret '_' ose 'X'
 - Maska duhet të përmbajë të paktën një '_' dhe një 'X'
 - Teksti hyrës duhet të jetë të paktën 2 shkronja i gjatë (pasi hiqen karakteret jo-alfabetikë)
