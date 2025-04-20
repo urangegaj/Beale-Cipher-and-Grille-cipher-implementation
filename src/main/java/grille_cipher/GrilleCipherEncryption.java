@@ -91,19 +91,13 @@ public class GrilleCipherEncryption {
 
         while (true) {
             mask = new StringBuilder();
-            int countX = 0, countUnderscore = 0;
 
             for (int i = 0; i < n; i++) {
-                if (rand.nextBoolean()) {
-                    mask.append('X');
-                    countX++;
-                } else {
-                    mask.append('_');
-                    countUnderscore++;
-                }
+                mask.append(rand.nextBoolean() ? 'X' : '_');
             }
 
-            if (countX > 0 || countUnderscore > 0) {
+            String maskStr = mask.toString();
+            if (maskStr.contains("X") && maskStr.contains("_")) {
                 break;
             }
         }
